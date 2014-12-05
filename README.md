@@ -5,12 +5,14 @@ The code taken from developerforce.com plus a new test class for coverage.
 
 USAGE EXAMPLE
 -------------
+<pre>
 string Query = 'SELECT Id, Name FROM Account LIMIT 200';
 string sObj = 'Account';
 string fld = 'Name';
 string val = 'New Name';
 SearchAndReplace changeName = new SearchAndReplace(Query, sObj, fld, val);
 Id batchprocessid = Database.executeBatch(changeName);
+</pre>
 
 COMMENTS
 --------
